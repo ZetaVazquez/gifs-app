@@ -1,0 +1,19 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h2 class="text-light">GifsApp</h2>
+  <hr class="text-white">
+  <div class="list-group list-restet">
+    <button
+    *ngFor="let tag of tags"
+    class="list-group-item list-group-item-action"
+    (click)="searchTag(tag)"
+    >
+      {{tag | titlecase}} <!-- titlecase es un pipe (Objeto de transformacion visual)-->
+    </button>
+
+
+  </div>
+
+
+
+
+</div>
